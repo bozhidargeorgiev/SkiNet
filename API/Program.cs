@@ -28,7 +28,7 @@ var app = builder.Build();
 // }
 app.UseMiddleware<ExceptionMiddleware>();
 app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins(
-    "http://localhost:5300",
+    "https://localhost:5300",
     "https://localhost:5301"
 ));
 app.MapControllers();
