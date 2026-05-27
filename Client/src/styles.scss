@@ -25,6 +25,10 @@
 //   height: var(--mat-form-field-container-height) !important;
 // }
 
+.container {
+    @apply mx-auto max-w-screen-2xl
+}
+
 .snack-success {
   @include mat.snack-bar-overrides((
     button-color: white,
